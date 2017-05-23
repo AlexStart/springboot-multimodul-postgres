@@ -18,7 +18,7 @@
         <dependency>
             <groupId>my.springboot.multimodul.postgres</groupId>
             <artifactId>persistence</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

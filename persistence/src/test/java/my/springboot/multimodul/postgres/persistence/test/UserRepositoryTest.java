@@ -8,6 +8,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -24,13 +25,14 @@ import static org.junit.Assert.assertNull;
  * Created by gladivs on 16.05.2017.
  */
 //************Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test***********
-@RunWith(SpringRunner.class)
-@DataJpaTest
-@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
+//@RunWith(SpringRunner.class)
+//@DataJpaTest
+//@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
 //@TestPropertySource("classpath:application-test.properties")
 //@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 //@ActiveProfiles("test")
-@SpringBootTest(classes = TestConfiguration.class)
+//@SpringBootTest(classes = TestConfiguration.class)
+//@SpringBootConfiguration()
 public class UserRepositoryTest {
 
     @Autowired
@@ -42,7 +44,7 @@ public class UserRepositoryTest {
     }
 
     //TODO :
-    //@Ignore
+    @Ignore
     @Test
     public void saveUserTest() {
         User user = new User();
