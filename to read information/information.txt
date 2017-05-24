@@ -6,6 +6,12 @@ https://github.com/gharia/spring-boot-angular/tree/master/src/main
 
 !!!!!How Does Spring Boot Work?!!!!
 https://github.com/danielabar/springboot-pluralsight#how-does-spring-boot-work
+Guide to @ConfigurationProperties in Spring Boot
+http://www.baeldung.com/configuration-properties-in-spring-boot
+Spring @PropertySource example
+https://www.mkyong.com/spring/spring-propertysources-example/
+Properties with Spring and Spring Boot
+http://www.baeldung.com/properties-with-spring
 
 Database Migration With Flyway
 https://dzone.com/articles/database-migration-flyway

@@ -7,6 +7,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +15,6 @@ import org.springframework.stereotype.Component;
  * Created by gladivs on 24.05.2017.
  */
 @SpringBootApplication
-//@EnableAutoConfiguration
 public class ApplicationStartup {
     public static void main(String[] args) {
         ConfigurableApplicationContext appContext = SpringApplication.run(AppConfig.class, args);
