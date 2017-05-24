@@ -1,2 +1,17 @@
 Flyway and Spring Boot integration
 https://stackoverflow.com/questions/29257440/flyway-and-spring-boot-integration
+
+-------------
+YouTube Architecture
+http://highscalability.com/youtube-architecture
+What is the software architecture of YouTube?
+https://www.quora.com/What-is-the-software-architecture-of-YouTube
+What is YouTube's architecture?
+https://www.quora.com/What-is-YouTubes-architecture
+
+
+Unit and Integration Tests in Spring Boot
+https://dzone.com/articles/unit-and-integration-tests-in-spring-boot
+
+Acceptance Testing Using JBehave, Spring Framework and Maven
+http://mkuthan.github.io/blog/2014/05/29/acceptance-testing-using-jbehave-spring-framework-and-maven/
