@@ -13,6 +13,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan(basePackages = {"my.springboot.multimodul.postgres.*"})
 @EntityScan(basePackages = {"my.springboot.multimodul.postgres.*"})
 public class SpringbootApplicationRun {
+
+
+
     public static void main(String[] args) {
         SpringApplication.run(SpringbootApplicationRun.class, args);
     }

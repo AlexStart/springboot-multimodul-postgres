@@ -1,13 +1,32 @@
+!!!!Developing a simple e-commerce application from scratch to production using SpringBoot!!!!
+http://sivalabs.in/2015/11/developing-a-simple-e-commerce-application-from-scratch-to-production-using-springboot/
+!!!!Spring Boot with AngularJS using Gradle – with Spring Security and Auditing!!!
+https://ghariaonline.wordpress.com/2016/04/19/spring-boot-with-angular-using-gradle/
+https://github.com/gharia/spring-boot-angular/tree/master/src/main
+
+!!!!!How Does Spring Boot Work?!!!!
+https://github.com/danielabar/springboot-pluralsight#how-does-spring-boot-work
+
+Database Migration With Flyway
+https://dzone.com/articles/database-migration-flyway
+Multiple databases with Spring Boot and Spring Data JPA
+https://scattercode.co.uk/2016/01/05/multiple-databases-with-spring-boot-and-spring-data-jpa/
 Flyway and Spring Boot integration
 https://stackoverflow.com/questions/29257440/flyway-and-spring-boot-integration
+INTEGRATING FLYWAY IN A SPRING FRAMEWORK APPLICATION
+http://blog.trifork.com/2014/12/09/integrating-flywaydb-in-a-spring-framework-application/
 
--------------
+------------- How to Design ----------------------
 YouTube Architecture
 http://highscalability.com/youtube-architecture
 What is the software architecture of YouTube?
 https://www.quora.com/What-is-the-software-architecture-of-YouTube
+7 Years Of YouTube Scalability Lessons In 30 Minutes
+http://highscalability.com/blog/2012/3/26/7-years-of-youtube-scalability-lessons-in-30-minutes.html
 What is YouTube's architecture?
 https://www.quora.com/What-is-YouTubes-architecture
+How to Design Youtube (Part I)
+http://blog.gainlo.co/index.php/2016/10/22/design-youtube-part/?utm_campaign=quora&utm_medium=What+is+YouTube%27s+architecture%3F+Request&utm_source=quora
 
 
 Unit and Integration Tests in Spring Boot

@@ -2,6 +2,7 @@ package my.springboot.multimodul.postgres.dbmigration;
 
 
 import org.flywaydb.core.Flyway;
+import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -25,8 +26,10 @@ public class AppConfig {
     }
 
     @Bean
-    //@ConfigurationProperties(prefix = "spring.datasource")
+    @ConfigurationProperties(prefix = "datasource.flyway")
+    @FlywayDataSource
     DataSource dataSource() {
-        return DataSourceBuilder.create().url("jdbc:postgresql://localhost:5432/user1_db").driverClassName("org.postgresql.Driver").username("postgres").password("alex").build();
+        return DataSourceBuilder.create().build();
+        //return DataSourceBuilder.create().url("jdbc:postgresql://localhost:5432/user1_db").driverClassName("org.postgresql.Driver").username("postgres").password("alex").build();
     }
 }

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * Created by gladivs on 24.05.2017.
  */
 @SpringBootApplication
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class ApplicationStartup {
     public static void main(String[] args) {
         ConfigurableApplicationContext appContext = SpringApplication.run(AppConfig.class, args);
