@@ -36,13 +36,12 @@
         </dependency>
         <dependency>
             <groupId>my.springboot.multimodul.postgres</groupId>
-            <artifactId>db-migration</artifactId>
+            <artifactId>controller</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>my.springboot.multimodul.postgres</groupId>
-            <artifactId>controller</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
         </dependency>
     </dependencies>
 

@@ -30,7 +30,6 @@
         <module>persistence</module>
         <module>service</module>
         <module>controller</module>
-        <module>db-migration</module>
         <module>application</module>
     </modules>
 
