@@ -19,13 +19,16 @@ import javax.sql.DataSource;
 @Profile(value = {"dev", "prod"})
 public class DbMigrationConfig {
 
-    @Value("${datasource.flyway.url}")
+    //@Value("${datasource.flyway.url}")
+    @Value("${JDBC_DATABASE_URL}")
     private String DB_URL;
     @Value("${datasource.flyway.driver-class-name}")
     private String DB_DRIVER;
-    @Value("${datasource.flyway.username}")
+    //@Value("${datasource.flyway.username}")
+    @Value("${JDBC_DATABASE_USER}")
     private String DB_USERNAME;
-    @Value("${datasource.flyway.password}")
+   // @Value("${datasource.flyway.password}")
+   @Value("${JDBC_DATABASE_PASSWORD}")
     private String DB_PASSWORD;
     @Value("${flyway.locations}")
     private String SCRIPTS_LOCATION;
