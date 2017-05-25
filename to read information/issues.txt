@@ -1,0 +1,2 @@
+2017-05-25T14:59:03.394163+00:00 app[web.1]: java.sql.SQLException: Driver:org.postgresql.Driver@4a22f9e2 returned null for
+URL:postgres://jgfecipxzioeln:29e4587b9d27823d69c566f8c91890631875f2285a6d56f3a21ee6a60e3c0375@ec2-107-21-108-204.compute-1.amazonaws.com:5432/dc6qkl3o03egls
