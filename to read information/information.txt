@@ -1,8 +1,10 @@
-!!!!Developing a simple e-commerce application from scratch to production using SpringBoot!!!!
+﻿!!!!Developing a simple e-commerce application from scratch to production using SpringBoot!!!!
 http://sivalabs.in/2015/11/developing-a-simple-e-commerce-application-from-scratch-to-production-using-springboot/
 !!!!Spring Boot with AngularJS using Gradle – with Spring Security and Auditing!!!
 https://ghariaonline.wordpress.com/2016/04/19/spring-boot-with-angular-using-gradle/
 https://github.com/gharia/spring-boot-angular/tree/master/src/main
+An IntelliJ Multi Module Spring Boot MVC Configuration
+http://nixmash.com/post/an-intellij-multi-module-spring-boot-mvc-configuration
 
 !!!!!How Does Spring Boot Work?!!!!
 https://github.com/danielabar/springboot-pluralsight#how-does-spring-boot-work
@@ -13,6 +15,7 @@ https://www.mkyong.com/spring/spring-propertysources-example/
 Properties with Spring and Spring Boot
 http://www.baeldung.com/properties-with-spring
 
+!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Database Migration With Flyway
 https://dzone.com/articles/database-migration-flyway
 Multiple databases with Spring Boot and Spring Data JPA
@@ -34,9 +37,45 @@ https://www.quora.com/What-is-YouTubes-architecture
 How to Design Youtube (Part I)
 http://blog.gainlo.co/index.php/2016/10/22/design-youtube-part/?utm_campaign=quora&utm_medium=What+is+YouTube%27s+architecture%3F+Request&utm_source=quora
 
+!!!!!!!!!!!!!!!!!!! Build a REST API with Spring 4 and Java Config !!!!!!!!!!!!!!!
+Build a REST API with Spring 4 and Java Config
+http://www.baeldung.com/building-a-restful-web-service-with-spring-and-java-based-configuration
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Unit and Integration Tests in Spring Boot !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Unit and Integration Tests in Spring Boot
 https://dzone.com/articles/unit-and-integration-tests-in-spring-boot
 
 Acceptance Testing Using JBehave, Spring Framework and Maven
 http://mkuthan.github.io/blog/2014/05/29/acceptance-testing-using-jbehave-spring-framework-and-maven/
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!! Configuring Spring Boot !!!!!!!!!!!!!!!
+@@@@@ Configuring Spring Boot @@@@@
+https://spapas.github.io/2016/03/31/spring-boot-settings/
+
+Spring Profiles Java and XML Configuration
+http://memorynotfound.com/spring-profiles-java-xml-configuration/
+
+mvn -Dspring.profiles.active="demo" jetty:run
+
+ou can also declaratively provide the default or active profiles using the following system properties.
+
+// setting the active profile
+-Dspring.profiles.active="profile1,profile2"
+
+// setting the default profile
+-Dspring.profiles.active="default"
+
+@Profile("default")
+
+
+@Configuration
+@Profile({"development", "default"})
+public class DevelopmentConfig {
+
+    @PostConstruct
+    public void init(){
+        System.out.println("development profile is set");
+    }
+
+}

@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
+import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 import javax.annotation.Resource;
@@ -19,8 +16,8 @@ import javax.sql.DataSource;
  * Created by gladivs on 24.05.2017.
  */
 @Configuration
-@PropertySource("classpath:application.properties")
-public class AppConfig {
+@Profile(value = {"dev", "prod"})
+public class DbMigrationConfig {
 
     @Value("${datasource.flyway.url}")
     private String DB_URL;

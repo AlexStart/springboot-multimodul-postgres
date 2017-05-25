@@ -1,0 +1,7 @@
+java -Dspring.profiles.active=dev -jar application/target/application-0.0.1-SNAPSHOT.jar
+
+java -Dspring.profiles.active=prod -jar application/target/application-0.0.1-SNAPSHOT.jar
+
+java -Dspring.profiles.active=test -jar application/target/application-0.0.1-SNAPSHOT.jar >> testlog.txt
+
+java -jar application/target/application-0.0.1-SNAPSHOT.jar >> testlog.txt
