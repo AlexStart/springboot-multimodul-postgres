@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
@@ -41,7 +42,8 @@ public class DbMigrationConfig {
     }
 
     @Bean
-    @FlywayDataSource
+    @Primary
+    //@FlywayDataSource
     public DataSource dataSource() {
         System.out.println("@@@@@@@@@@@@@@ "+DB_URL+" @@@@@@@@@@@@@@@");
         System.out.println("@@@@@@@@@@@@@@ "+DB_USERNAME+" @@@@@@@@@@@@@@@");
