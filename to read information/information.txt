@@ -6,6 +6,10 @@ https://github.com/gharia/spring-boot-angular/tree/master/src/main
 An IntelliJ Multi Module Spring Boot MVC Configuration
 http://nixmash.com/post/an-intellij-multi-module-spring-boot-mvc-configuration
 
+!!!!!!!!!!!!!! CODE EXAMPLE !!!!!!!!!!!!!!!!!!!!!!
+demo-multi-entity-managers
+https://github.com/snicoll-demos/demo-multi-entity-managers
+
 !!!!!How Does Spring Boot Work?!!!!
 https://github.com/danielabar/springboot-pluralsight#how-does-spring-boot-work
 Guide to @ConfigurationProperties in Spring Boot
