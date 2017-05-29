@@ -1,0 +1,12 @@
+
+heroku login
+
+git push heroku master
+
+heroku ps:scale web=1
+
+heroku open
+
+heroku logs --tail
+
+heroku logs --tail >> mylog.txt

@@ -5,3 +5,15 @@ java -Dspring.profiles.active=prod -jar application/target/application-0.0.1-SNA
 java -Dspring.profiles.active=test -jar application/target/application-0.0.1-SNAPSHOT.jar >> testlog.txt
 
 java -jar application/target/application-0.0.1-SNAPSHOT.jar >> testlog.txt
+
+@@@@@@@@@@@@@@@@@ RUN APP IN BROWSER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+https://springboot-multimodul-postgres.herokuapp.com/users
+
+JDBC_DATABASE_URL
+jdbc:postgresql://ec2-174-129-224-33.compute-1.amazonaws.com:5432/d2cn30qe4vu3nb
+
+JDBC_DATABASE_USER
+jeykvnwxfrhbdb
+
+JDBC_DATABASE_PASSWORD
+2664e1cf6bf9f23d302f95aca3210dc2b006a9c238d686e73fc2bc2ce9d33192

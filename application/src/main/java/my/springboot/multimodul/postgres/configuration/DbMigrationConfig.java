@@ -1,16 +1,17 @@
 package my.springboot.multimodul.postgres.configuration;
 
-
 import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.flyway.FlywayDataSource;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 import javax.sql.DataSource;
+
 
 /**
  * Created by gladivs on 24.05.2017.
@@ -41,16 +42,15 @@ public class DbMigrationConfig {
     }
 
     @Bean
+    @Primary
     @FlywayDataSource
     public DataSource dataSource() {
-        System.out.println("@@@@@@@@@@@@@@ "+DB_URL+" @@@@@@@@@@@@@@@");
-        System.out.println("@@@@@@@@@@@@@@ "+DB_USERNAME+" @@@@@@@@@@@@@@@");
-        System.out.println("@@@@@@@@@@@@@@ "+DB_PASSWORD+" @@@@@@@@@@@@@@@");
-        return DataSourceBuilder.create().url(DB_URL).driverClassName(DB_DRIVER).username(DB_USERNAME).password(DB_PASSWORD).build();
+        return DataSourceBuilder.create().driverClassName(DB_DRIVER).url(DB_URL).username(DB_USERNAME).password(DB_PASSWORD).build();
     }
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertyConfigurer () {
         return new PropertySourcesPlaceholderConfigurer();
     }
+
 }
