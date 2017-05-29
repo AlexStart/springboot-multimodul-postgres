@@ -6,3 +6,5 @@ https://stackoverflow.com/questions/42715888/driverorg-postgresql-driver3ed03652
 
 PostgreSQL JDBC Driver not working for Heroku DB Connection
 https://stackoverflow.com/questions/38981174/postgresql-jdbc-driver-not-working-for-heroku-db-connection
+
+http://dmitrykrivenko.blogspot.com.by/2013/05/deploying-java-web-application-using.html
