@@ -12,6 +12,10 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 
 /**
  * Created by gladivs on 24.05.2017.
@@ -48,11 +52,26 @@ public class DbMigrationConfig {
         System.out.println("@@@@@@@@@@@@@@ "+DB_URL+" @@@@@@@@@@@@@@@");
         System.out.println("@@@@@@@@@@@@@@ "+DB_USERNAME+" @@@@@@@@@@@@@@@");
         System.out.println("@@@@@@@@@@@@@@ "+DB_PASSWORD+" @@@@@@@@@@@@@@@");
-        return (DataSource)DataSourceBuilder.create().url(DB_URL).driverClassName(DB_DRIVER).username(DB_USERNAME).password(DB_PASSWORD).type(DataSource.class).build();
+        getConnection();
+        return (DataSource)DataSourceBuilder.create().url(DB_URL).username(DB_USERNAME).password(DB_PASSWORD).type(DataSource.class).build();
     }
 
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertyConfigurer () {
         return new PropertySourcesPlaceholderConfigurer();
+    }
+
+    private void getConnection() {
+        try {
+            Class.forName("org.postgresql.Driver");
+            java.sql.Connection connection = DriverManager
+                    .getConnection("jdbc:postgresql://ec2-174-129-224-33.compute-1.amazonaws.com:5432/d2cn30qe4vu3nb", "jeykvnwxfrhbdb", "2664e1cf6bf9f23d302f95aca3210dc2b006a9c238d686e73fc2bc2ce9d33192");
+            System.out.println("********************* CONNECTION OK *********************");
+            System.out.println(connection.getCatalog());
+        } catch (Exception e) {
+            System.out.println("********************* Connection Failed! Check output console *************************");
+            e.printStackTrace();
+            return;
+        }
     }
 }
