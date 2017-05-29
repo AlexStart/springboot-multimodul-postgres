@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "my.springboot.multimodul.postgres.*")
 @ComponentScan(basePackages = {"my.springboot.multimodul.postgres.*"})
 @EntityScan(basePackages = {"my.springboot.multimodul.postgres.*"})
-@Profile(value = {"dev", "prod"})
+@Profile(value = {"dev", "prod", "test"})
 public class ApplicationStart {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationStart.class, args);
